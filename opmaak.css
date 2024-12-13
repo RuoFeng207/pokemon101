@@ -6,26 +6,3 @@
 h1{
     text-align: center;
 }
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-}
-
-.image-button {
-    background-image: url('your-image-url.jpg'); /* Vervang door jouw afbeeldings-URL */
-    background-size: cover;
-    width: 100px; /* Stel de gewenste breedte in */
-    height: 100px; /* Stel de gewenste hoogte in */
-    border: none;
-    cursor: pointer;
-    outline: none; /* Verwijder de standaard focusring */
-    transition: transform 0.2s; /* Voor een leuke hover-effect */
-}
-
-.image-button:hover {
-    transform: scale(1.1); /* Vergroot de knop bij hover */
-}
