@@ -1,8 +1,32 @@
-.main{
+body{
+    background-color: rgb(53, 151, 151);
+}
+.afbeelding{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5mm ;
+    border: 1mm solid black;
+    
+
 }
 h1{
     text-align: center;
+}
+
+
+#catch_them_all img {
+    width: 300px; 
+    height: auto; 
+    display: block; 
+    border: 1mm solid black;
+
+}
+
+button {
+    display: block; 
+    margin: 0 auto;
+    background: none;
+    border: none;
+    cursor: pointer;
 }
