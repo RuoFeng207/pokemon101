@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded",function(){
     const button = document.getElementById("start");
     button.addEventListener("click", function() {
-        alert("hallo world")
+        window.location.href ="generate.html";
 
     });
 });
