@@ -20,13 +20,15 @@ h1{
     height: auto; 
     display: block; 
     border: 1mm solid black;
-
+;
 }
-
-button {
-    display: block; 
-    margin: 0 auto;
+#catch_them_all{
     background: none;
     border: none;
+}
+#start {
+    display: block; 
+    margin: 0 auto;
     cursor: pointer;
 }
+
