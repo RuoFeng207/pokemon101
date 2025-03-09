@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const button = document.getElementById("catch_them_all");
     const audio = document.getElementById("pokemonAudio");
-
+    
     button.addEventListener("click", function () {
         if (audio.paused) {
             audio.play();
@@ -10,12 +10,9 @@ document.addEventListener("DOMContentLoaded", function () {
             audio.currentTime = 0;
         }
     });
-});
 
-document.addEventListener("DOMContentLoaded",function(){
-    const button = document.getElementById("start");
-    button.addEventListener("click", function() {
-        window.location.href ="generate.html";
-
+    const startButton = document.getElementById("start");
+    startButton.addEventListener("click", function() {
+        window.location.href = "generate.html";
     });
 });

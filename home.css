@@ -1,12 +1,12 @@
 body{
-    background-color: rgb(53, 151, 151);
+    background-color: #8fb4db;
 }
 .afbeelding{
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5mm ;
-    border: 1mm solid black;
+    border: 3px solid black;
     
 
 }
@@ -18,13 +18,13 @@ h1{
 #catch_them_all img {
     width: 300px; 
     display: block; 
-    border: 1mm solid black;
+    border: 3px solid black;
 }
 .button-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 2mm;
 }
 
 button {
@@ -46,7 +46,8 @@ button:hover {
     display: block; 
     margin: 0 auto;
     cursor: pointer;
-    background-color: #09ff00;
+    background-color: #cae09b;
+    border: 3px solid #85af2e;
 }
 
 
