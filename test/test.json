@@ -1,0 +1,17 @@
+{
+  "pokemons": [
+    {
+      "name": "bulbasaur",
+      "number": 1,
+      "image":"../image/gen1/1_bulbasaur.png",
+      "audio":"../audio/gen1/cries_pokemon_latest_1.mp3",
+      "hidden_audio": null
+    },
+    {
+      "name": "ivysaur",
+      "number": 2,
+      "image":"../image/gen1/2_ivysaur.png",
+      "audio":"../audio/gen1/cries_pokemon_latest_2.mp3"
+    }
+  ]
+}
