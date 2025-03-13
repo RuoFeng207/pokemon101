@@ -6,13 +6,21 @@
     <title>Pokémon Test</title>
 </head>
 <body>
-    <h1>Pokémon Test</h1>
-    <button id="random-button">Kies een willekeurige Pokémon</button>
-    <div id="pokemon-display"></div>
-    <div id="pokemon-img"></div>
-    <div id="pokemon-audio"></div>
+    <h1>Who's That Pokémon?</h1>
 
-    <!-- Verwijs direct naar script.js zonder ../ -->
+    <button id="randomPokemonBtn">Kies een Pokémon</button>
+    <div id="pokemon-container" style="display: none;">
+        <img id="pokemon-image" src="" alt="Pokémon" style="filter: brightness(0);">
+        <p id="pokemon-name" style="display: none;"></p>
+        <audio id="pokemon-audio" controls style="display: none;">
+            <source id="pokemon-sound" src="" type="audio/mp3">
+        </audio>
+    </div>
+
+    <input type="text" id="guessInput" placeholder="Raad de Pokémon">
+    <button id="guessBtn">Check</button>
+    <p id="feedback"></p>
+
     <script src="test.js"></script>
 </body>
 </html>

@@ -1,27 +1,44 @@
-console.log("Script is geladen!");
+let currentPokemon = null;
 
-document.getElementById('random-button').addEventListener('click', function () {
-  console.log("Knop is ingedrukt!"); // Check of de knop werkt
+document.getElementById("randomPokemonBtn").addEventListener("click", () => {
+    fetch("test.json")
+        .then(response => response.json())
+        .then(data => {
+            const randomIndex = Math.floor(Math.random() * data.pokemons.length);
+            currentPokemon = data.pokemons[randomIndex];
 
-  fetch('test.json')  // Controleer of de JSON wordt geladen
-    .then(response => {
-      console.log("Fetch gestart...");
-      if (!response.ok) {
-        throw new Error('Kan test.json niet laden');
-      }
-      return response.json();
-    })
-    .then(data => {
-      console.log("JSON ingeladen:", data); // Debugging: kijken of de JSON-data binnenkomt
+            document.getElementById("pokemon-image").src = currentPokemon.image;
+            document.getElementById("pokemon-image").style.filter = "brightness(0)";
+            document.getElementById("pokemon-container").style.display = "block";
 
-      const randomPokemon = data.pokemons[Math.floor(Math.random() * data.pokemons.length)];
-      const pokemonDisplay = document.getElementById('pokemon-display');
-      const pokemonImg = document.getElementById('pokemon-img')
-      const pokemonAudio = document.getElementById('pokemon-audio')
+            document.getElementById("pokemon-name").innerText = currentPokemon.name;
+            document.getElementById("pokemon-name").style.display = "none";
 
-      pokemonDisplay.innerHTML = `<h3>${randomPokemon.name} (#${randomPokemon.number})</h3>`;
-    })
-    .catch(error => {
-      console.error('Fout bij het inladen van JSON:', error);
-    });
+            // Verberg de audio totdat de Pokémon is geraden
+            document.getElementById("pokemon-audio").style.display = "none";
+            document.getElementById("pokemon-sound").src = currentPokemon.sound;
+
+            // ✅ Forceer het laden van de audio
+            document.getElementById("pokemon-audio").load();
+
+            document.getElementById("feedback").innerText = "";
+        })
+        .catch(error => console.error("Fout bij het inladen van JSON:", error));
+});
+
+document.getElementById("guessBtn").addEventListener("click", () => {
+    const guess = document.getElementById("guessInput").value.toLowerCase();
+    if (currentPokemon && guess === currentPokemon.name.toLowerCase()) {
+        document.getElementById("pokemon-image").style.filter = "brightness(1)";
+        document.getElementById("pokemon-name").style.display = "block";
+
+        // Maak de audio zichtbaar en speel het af
+        const audio = document.getElementById("pokemon-audio");
+        audio.style.display = "block"; // Maak de audio zichtbaar
+        audio.play().catch(error => console.error("Audio kon niet automatisch worden afgespeeld:", error));
+
+        document.getElementById("feedback").innerText = "Goed geraden!";
+    } else {
+        document.getElementById("feedback").innerText = "Fout, probeer opnieuw!";
+    }
 });
