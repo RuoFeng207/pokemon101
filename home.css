@@ -50,6 +50,40 @@ button:hover {
     border: 3px solid #85af2e;
 }
 
+
+.toggle-menu ol {
+    width: 100%;
+    list-style-type: none;
+}
+
+.toggle-menu ol li {
+    display: block;
+    width: 100%;
+}
+
+.toggle-menu ol li a {
+    color: #f7f7f7;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    line-height: 4;
+    
+    
+}
+
+.toggle-menu ol li a i {
+    color: #e93e34;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    
+    
+}
+
 .fa-home {
     font-size: 22px; 
     vertical-align: middle; 
@@ -75,4 +109,26 @@ button:hover {
     vertical-align: middle; 
 }
 
+.toggle-menu{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #000000;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(0);
+}
+
+.toggle-menu .head{
+    color: #f7f7f7;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: #e93e34;
+}
 
