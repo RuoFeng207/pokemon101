@@ -62,8 +62,8 @@ button:hover {
 }
 
 .toggle-menu ol li a {
-    color: #f7f7f7;
     display: flex;
+    color: #f7f7f7;
     align-items: center;
     text-decoration: none;
     font-size: 15px;
@@ -82,6 +82,12 @@ button:hover {
     text-decoration: none;
     
     
+}
+ol li:hover a{
+    background:#8fdbb8;
+    color: #000;
+    letter-spacing: 2px;
+    padding-right:0px;
 }
 
 .fa-home {
