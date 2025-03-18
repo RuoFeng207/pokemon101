@@ -51,71 +51,33 @@ button:hover {
 }
 
 
-.toggle-menu ol {
-    width: 100%;
-    list-style-type: none;
-}
-
-.toggle-menu ol li {
-    display: block;
-    width: 100%;
-}
-
-.toggle-menu ol li a {
-    display: flex;
-    color: #f7f7f7;
-    align-items: center;
-    text-decoration: none;
-    font-size: 15px;
-    letter-spacing: 1px;
-    position: relative;
-    transition: 0.3s;
-    line-height: 4;
-    
-    
-}
-
-.toggle-menu ol li a i {
-    color: #e93e34;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    
-    
-}
-ol li:hover a{
-    background:#8fdbb8;
-    color: #000;
-    letter-spacing: 2px;
-    padding-right:0px;
-}
-
 .fa-home {
-    font-size: 22px; 
-    vertical-align: middle; 
-    
+    font-size: 22px;
+    vertical-align: middle;
 }
 
-.fa-gamepad{
+.fa-gamepad {
     font-size: 17px;
-    vertical-align: middle; 
-    margin-right: 1px 
+    vertical-align: middle;
+    margin-right: 1px;
 }
-.fa-gear{
+
+.fa-gear {
     font-size: 18px;
-    vertical-align: middle; 
+    vertical-align: middle;
     margin-right: 2px;
 }
 
 .fa-pokedex {
-    width: 16px;  
-    height: 16px; 
+    width: 16px;
+    height: 16px;
     margin-left: 2px;
     margin-right: 2px;
-    vertical-align: middle; 
+    vertical-align: middle;
 }
 
-.toggle-menu{
+
+.toggle-menu {
     height: 100%;
     width: 250px;
     position: absolute;
@@ -125,6 +87,8 @@ ol li:hover a{
     z-index: 1;
     transition: 0.5s ease;
     transform: translateX(0);
+    padding: 0; /* Verwijder padding van de container */
+    box-sizing: border-box; /* Zorg ervoor dat padding en borders geen extra ruimte creëren */
 }
 
 .toggle-menu .head{
@@ -133,8 +97,43 @@ ol li:hover a{
     font-weight: bold;
     padding: 30px;
     text-transform: uppercase;
-    text-align: center;
     letter-spacing: 3px;
     background: #e93e34;
 }
 
+.toggle-menu ol {
+    width: 100%;
+    list-style-type: none;
+    padding: 0; /* Verwijder padding van de lijst */
+    margin: 0; /* Verwijder margin van de lijst */
+    box-sizing: border-box; /* Zorg ervoor dat padding en borders geen extra ruimte creëren */
+}
+
+.toggle-menu ol li {
+    display: block;
+    width: 100%;
+    padding: 0; /* Verwijder padding van de lijstitems */
+}
+
+.toggle-menu ol li a  {
+    display: flex;
+    color: #f7f7f7;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    line-height: 4;
+    justify-content: flex-start;
+    padding: 10px; /* Voeg wat padding toe voor de inhoud van de link */
+    box-sizing: border-box; /* Zorg ervoor dat padding en borders geen extra ruimte creëren */
+}
+.toggle-menu ol li a i{
+    color: #e93e34;
+}
+
+ol li:hover a {
+    background: #2f2f2f;
+    letter-spacing: 2px;
+}
