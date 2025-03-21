@@ -38,8 +38,8 @@
     z-index: 1;
     transition: 0.5s ease;
     transform: translateX(0);
-    padding: 0; /* Verwijder padding van de container */
-    box-sizing: border-box; /* Zorg ervoor dat padding en borders geen extra ruimte creëren */
+    padding: 0; 
+    box-sizing: border-box; 
 }
 
 .toggle-menu .head{
