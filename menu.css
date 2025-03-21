@@ -1,0 +1,91 @@
+.fa-home {
+    font-size: 22px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+
+.fa-pokedex {
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    margin-right: 2px;
+    vertical-align: middle;
+}
+
+.fa-gamepad {
+    font-size: 17px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 1px;
+}
+
+.fa-gear {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 2px;
+}
+
+
+
+.toggle-menu {
+    height: 100%;
+    width: 180px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #000000;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(0);
+    padding: 0; /* Verwijder padding van de container */
+    box-sizing: border-box; /* Zorg ervoor dat padding en borders geen extra ruimte creëren */
+}
+
+.toggle-menu .head{
+    color: #f7f7f7;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: #e93e34;
+}
+
+.toggle-menu ol {
+    width: 100%;
+    list-style-type: none;
+    padding: 0; 
+    margin: 0; 
+    box-sizing: border-box; 
+}
+
+.toggle-menu ol li {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.toggle-menu ol li a  {
+    display: flex;
+    color: #f7f7f7;
+    align-items: center;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    line-height: 4;
+    justify-content: flex-start;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.toggle-menu ol li a i{
+    color: #e93e34;
+}
+
+ol li:hover a {
+    background: #2f2f2f;
+    letter-spacing: 2px;
+}
+

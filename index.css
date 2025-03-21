@@ -1,0 +1,53 @@
+body{
+    background-color: #8fb4db;
+}
+
+.image{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5mm ;
+    border: 3px solid black;
+}
+
+h1{
+    text-align: center;
+}
+
+
+#catch_them_all img {
+    width: 300px; 
+    display: block; 
+    border: 3px solid black;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2mm;
+}
+
+button {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1); 
+}
+
+#catch_them_all{
+    background: none;
+    border: none;
+}
+
+#start {
+    width: 300px;
+    display: block; 
+    margin: 0 auto;
+    cursor: pointer;
+    background-color: #cae09b;
+    border: 3px solid #85af2e;
+}
+
+
