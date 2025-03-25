@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="nl">
     
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="menu.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <input type="checkbox" id="check">
+    <div class="toggle-menu">
+        <label for="check">
+            <span class="fa fa-times" id = "times"></span>
+            <span class="fa fa-bars" id = "bars"></span>
+        </label>
+        <div class="head">Menu</div>
+        <ol>
+            <li><a href="#"><i class="fa fa-home" style="font-size:16x16;"></i>Home</a></li>
+            <li><a href="#"><img src="image/favicon_io/favicon-16x16.png" alt="Item 1" class="fa fa-pokedex">Pokedex</a></li>
+            <li><a href="#"><i class="fa fa-gamepad" style="font-size:16x16;"></i>How to play</a></li>
+            <li><a href="#"><i class="fa fa-gear" style="font-size:16x16;"></i>Instellingen</a></li>
 
-            <div class="toggle-menu">
-                <div class="head">Menu</div>
-                <ol>
-                    <li><a href="#"><i class="fa fa-home"></i><span class="menu-text">Home</span></a></li>
-                    <li><a href="#"><img src="image/favicon_io/favicon-16x16.png" alt="Item 1" class="fa fa-pokedex">Pokedex</a></li>
-                    <li><a href="#"><i class="fa fa-gamepad" style="font-size:16x16;"></i>How to play</a></li>
-                    <li><a href="#"><i class="fa fa-gear" style="font-size:16x16;"></i>Instellingen</a></li>
-        
-                </ol>
-            </div>
+        </ol>
+    </div>
 
-            <script src="menu.js"></script>
-        </body>
-    </head>
+    <script src="menu.js"></script>
+</body>
 
 </html>
