@@ -1,3 +1,4 @@
+/* colors */
 :root{
     --red: #e93e34;
     --white: #f7f7f7;
@@ -5,13 +6,14 @@
     --gray: #2d2d2d;
 
 }
-
+/* remove margin */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
+/* base to toggle menu */
 .toggle-menu{
     height: 100%;
     width: 250px;
@@ -21,7 +23,7 @@
     transition: 500ms ease;
     transform: translateX(-250px);
 }
-
+/* head of toggle menu */
 .toggle-menu .head{
     color: var(--white);
     font-size: 30px;
@@ -33,13 +35,19 @@
     background: var(--red);
 
 }
-
+/* pokedex icon */
 .fa-pokedex{
     padding-left: 40px;
     padding-right: 15px;
     
 }
-
+/* X icon */
+.fa-times{
+    padding-top: 3%;
+    width: 30px;
+    height: 30px;
+}
+/* lijst */
 ol{
     width: 100%;
     list-style: none;
@@ -93,13 +101,13 @@ span{
     cursor: pointer;
     background:var(--red);
 }
-#bars{
+#pokeball-button{
     background-color: var(--red);
 }
 #check:checked ~ .toggle-menu{
     transform:translateX(0);
 }
 
-#check:checked ~ .toggle-menu #bars{
+#check:checked ~ .toggle-menu #pokeball-button{
     display: none;
 }
