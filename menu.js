@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", async function () {
             document.head.appendChild(link);
         }
         
-        document.body.appendChild(script);
+        initMenuSounds();
+        
 
     } catch (error) {
         console.error("Fout bij laden van het menu:", error);
