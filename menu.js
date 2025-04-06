@@ -13,14 +13,7 @@ document.addEventListener("DOMContentLoaded", async function () {
             link.href = "menu.css";
             document.head.appendChild(link);
         }
-
-        // Voeg menu.js pas toe nadat menu.html is ingeladen
-        const script = document.createElement("script");
-        script.src = "menu.js";
-        script.onload = () => {
-            console.log("menu.js geladen en klaar voor gebruik!");
-            initMenuSounds(); 
-        };
+        
         document.body.appendChild(script);
 
     } catch (error) {
