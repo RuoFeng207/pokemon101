@@ -2,21 +2,21 @@
     "pokemons":[{
         "name":"bulbasaur",
         "number": 1,
-        "image":"image/Bulbasaur_1.png",
+        "image":"image/gen1/1_bulbasaur.png",
         "sound":"audio/gen1/cries_pokemon_latest_1.mp3",
         "hidden_sound": null
     },
     {
         "name":"ivysaur",
         "number": 2,
-        "image":"image/Ivysaur_2.png",
+        "image":"image/gen1/2_ivysaur.png",
         "sound":"audio/gen1/cries_pokemon_latest_2.mp3",
         "hidden_sound": null
     },
     {
         "name":"venusaur",
         "number": 3,
-        "image":"image/Venusaur_3.png",
+        "image":"image/gen1/3_venusaur.png",
         "sound":"audio/gen1/cries_pokemon_latest_3.mp3",
         "hidden_sound": null
     }

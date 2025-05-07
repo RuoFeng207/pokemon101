@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Pokémon 101 - Een how is that pokemon? game">
     <meta name="author" content="Ruo Feng Somers">
-    <script src="menu.js" defer></script>
+    <!-- <script src="menu.js" defer></script> -->
 
 
 <title>How is that pokemon?</title>
@@ -16,5 +16,20 @@
     <div id="menu-placeholder"></div>
     <h1>How is that pokemon?</h1>
     <script src="functie.js"></script>
+    <!-- genereer afbeelding en audio -->
+    <button id="generatePokemon">Kies een Pokémon</button>
+    <div id="pokemon-container" style="display: none;">
+        <img id="pokemon-image" src="" alt="Pokémon" draggable="false">
+        <p id="pokemon-name" style="display: none;"></p>
+        <audio id="pokemon-audio" controls style="display: none;">
+            <source id="pokemon-sound" src="" type="audio/mp3">
+        </audio>
+    </div>
+
+    <input type="text" id="guessInput" placeholder="Raad de Pokémon">
+    <button id="guessBtn">Check</button>
+    <p id="feedback"></p>
+
+    <script src="generate.js"></script>
 </body>
 </html>
