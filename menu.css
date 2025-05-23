@@ -104,6 +104,7 @@ span{
 #pokeball-button{
     background-color: var(--red);
 }
+
 #check:checked ~ .toggle-menu{
     transform:translateX(0);
 }
