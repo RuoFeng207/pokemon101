@@ -1,3 +1,6 @@
+.menu-hidden {
+    visibility: hidden;
+}
 /* colors */
 :root{
     --red: #e93e34;
