@@ -1,9 +1,9 @@
 {
     "menu-sound":[{
-        "pokeball_sound":"audio/item-found-sound-effect.mp3"
+        "pokeball_sound":"/audio/item-found-sound-effect.mp3"
     },
     {
-        "exit_sound":"audio/plink_button.mp3"
+        "exit_sound":"/audio/plink_button.mp3"
     }
     ]
 }

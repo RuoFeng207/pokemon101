@@ -1,16 +1,16 @@
 document.addEventListener("DOMContentLoaded", async function () {
     try {
-        const response = await fetch("menu.html");
+        const response = await fetch("/HTML/menu.html");
         if (!response.ok) throw new Error("Menu wordt niet geladen");
 
         const menuHTML = await response.text();
         document.getElementById("menu-placeholder").innerHTML = menuHTML;
 
         
-        if (!document.querySelector("link[href='menu.css']")) {
+        if (!document.querySelector("link[href='/CSS/menu.css']")) {
             const link = document.createElement("link");
             link.rel = "stylesheet";
-            link.href = "menu.css";
+            link.href = "/CSS/menu.css";
             document.head.appendChild(link);
         }
         
@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 });
 
 function initMenuSounds() {
-    fetch("sound.json")
+    fetch("/JSON/sound.json")
         .then(response => response.json())
         .then(data => {
             const pokeballSound = new Audio(data["menu-sound"][0].pokeball_sound);
